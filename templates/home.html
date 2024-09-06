@@ -1,0 +1,137 @@
+<!DOCTYPE <html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title> Cryptosafe|Homepage|</title>
+
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    {% include "header.html" %}
+
+    <main>
+        <div class="home_intro">
+            <div class="home_intro_text">
+                <h1>YOUR DATA <br>OUR<br>CONCERN</h1>
+            </div>
+            
+            <!-- <div class="blank">
+                
+            </div> -->
+            <!-- <img src="/static/images/bg for home page.png" alt=""> -->
+            
+        </div>
+        <script>
+            function updateFontSize(){
+            let con = document.querySelector(".home_intro_text");
+            let con_width = con.offsetWidth;
+
+            // con.style = "line-height: 130px;"
+            // con.style.LineHeight = con_width*0.1 + 'px';
+            con.style.fontSize = con_width*0.07 + 'px';
+            // console.log(con.style)
+        }
+        window.addEventListener('resize',updateFontSize);
+        window.addEventListener('load',updateFontSize);
+        </script>
+
+
+        <center>
+
+            <div class="intro_box">
+                <div class="intro">
+                    <div>
+                        <p>
+                            <h3>Tired of passwords and vulnerable databases?</h3><br> Introducing <b>CRYPTOSAFE</b>, the
+                            revolutionary data storage platform that takes security to the next level. We encrypt your data
+                            using multiple randomized algorithms, creating a unique key every time you save. Only you hold
+                            the key to access your data, making it unreadable even to us or potential hackers. Say goodbye
+                            to the fear of breaches and leaks, and experience true data ownership with <b>CRYPTOSAFE</b>.
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <h3>What is Cryptography?</h3>
+                    <p>
+                        Imagine a world where your secrets are whispered in a language only you and the intended
+                        recipient understand. A world where your most valuable data is locked away in a vault, not with
+                        a simple key, but with a complex puzzle that only the rightful owner can solve. This is the
+                        world of cryptography, the art and science of protecting information through the use of codes
+                        and algorithms.
+                    </p>
+                    <br>
+                    <p>
+                        Cryptography has been around for centuries, used by kings and queens, spies and revolutionaries,
+                        to safeguard their messages from prying eyes. Today, it plays a crucial role in our digital
+                        lives, securing everything from online banking transactions to the emails you send to your
+                        friends.
+                    </p>
+                </div>
+
+                <img src="/static/images/key_question.png" style="width: 75%;" alt="">
+            </div>
+
+            <div class="content1">
+                <img src="/static/images/key 2.png" alt="">
+                <div>
+                    <h3>What Cryptography does?</h3>
+                    <p>
+                        At its core, cryptography is about transforming plain text (the message you want to send) into
+                        ciphertext (a scrambled version that is unreadable without the right key). This transformation
+                        can be done in many ways, from simple substitution ciphers like Caesar's ciphers to complex
+                        mathematical algorithms used in modern encryption.
+                    </p>
+                    <br>
+                    <p>
+                        The key to cryptography is the key itself. This is a piece of information that is used to both
+                        encrypt and decrypt the message. Without the key, the ciphertext remains a jumble of meaningless
+                        characters. This ensures that only those authorized to access the information can do so.
+                    </p>
+                    <br>
+                    <p>
+                        Cryptography is not just about hiding information; it also plays a vital role in ensuring the
+                        authenticity and integrity of data. Digital signatures, for example, allow us to verify that a
+                        message comes from a specific sender and has not been tampered with in transit.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="content">
+                <div>
+                    <h3>Why is it Important?</h3>
+                    <p>
+                        In today's interconnected world, cryptography is more important than ever. As we rely more and
+                        more on digital technologies, the need to protect our sensitive information becomes increasingly
+                        critical. Cryptography provides us with the tools to do just that, allowing us to communicate,
+                        store, and share data with confidence.
+                    </p>
+                    <br>
+                    <p>
+                        So, the next time you send an email, make an online purchase, or simply browse the internet,
+                        remember the silent guardians working behind the scenes – the algorithms and codes of
+                        cryptography, keeping your information safe and secure.
+                    </p>
+                </div>
+
+                <img src="/static/images/cry.jpg" alt="">
+            </div>
+
+
+    </main>
+
+    {% include "footer.html" %}
+</body>
+
+</html>

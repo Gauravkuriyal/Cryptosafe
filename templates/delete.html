@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/delete.css">
+    <title>Delete</title>
+</head>
+<body>
+    {% include "header.html" %}
+    
+    <main>
+    
+        <div class="image">
+                <img style="border-radius: 80%;border-style: ridge;"
+                src="/static/images/data leak.jpg">
+
+        </div>
+    </div>
+        <div class="inst up">
+            <center>
+                <h1>Want To Delete Your Data?</h1>
+                <br>
+                <h3>Enter your key</h3>
+
+                <form method="post">
+                {% csrf_token %}
+                    Key:
+                    <input type="text" required name="key_form">
+                    <br>
+                    <br>
+                    <input class="submit" style="padding: 1%;background-color: black;color: white;border: none;border-radius: 5px;"  type="submit" value="submit">
+                </form>
+            </center>
+        </div>
+        <hr>
+
+        {% if output != "" %}
+        <h3>Review</h3><br>
+        <fieldset>
+            <pre><output > {{ output }} </output></pre>
+        </fieldset>
+        <hr>
+        {% endif %}
+        <div class="inst">
+            <h3>Can't Delete your data?</h3>
+            <ul>
+                <li>Check wether your key is correct or not.</li>
+                <li>You should save Your data first frome <a href="/store/">Store</a> page first.</li>
+                <li>Try re-opening the current page and enter key again.</li>
+            </ul>
+        </div>
+    </main>
+    
+    {% include "footer.html" %}
+</body>
+</html>

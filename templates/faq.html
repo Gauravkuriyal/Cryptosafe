@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/faq.css">
+    <title>FAQs</title>
+</head>
+
+<body>
+    {% include "header.html" %}
+    <main>
+        <h2 style="color:rgb(241, 237, 237); text-align:center">
+            SOME COMMONLY ASKED QUESTIONS
+        </h2>
+        <div class="layout">
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>What is Cryptosafe, and how does it ensure the security of my data?
+
+                    </p>
+
+                </div>
+                <div class="accordion__answer">
+                    <p>-Cryptosafe is a secure platform designed to protect sensitive information.
+                        It utilizes advanced encryption methods to ensure the confidentiality and
+                        integrity of your data.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Is Cryptosafe a free platform for storing sensitive data?
+
+
+                    </p>
+
+                </div>
+                <div class="accordion__answer">
+                    <p>-Yes, Cryptosafe is a free-to-use platform, providing secure storage for sensitive information at
+                        no
+                        cost to the users.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Can I trust Cryptosafe with my private keys?
+
+
+                    </p>
+
+                </div>
+                <div class="accordion__answer black">
+                    <p>Yes, Cryptosafe employs industry-standard encryption methods to safeguard private keys, ensuring
+                        that
+                        only authorized users can access and use them.</p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion__question black">
+                    <p>How does Cryptosafe protect against cyber threats?
+                    </p>
+                </div>
+
+                <div class="accordion__answer black">
+                    <p>
+                        Cryptosafe implements robust encryption algorithms and security measures to guard against common
+                        cyber threats such as hacking, phishing, and malware attacks
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        console.log("hello")
+
+        let answers = document.querySelectorAll(".accordion");
+        answers.forEach((event) => {
+            event.addEventListener("click", () => {
+                if (event.classList.contains("active")) {
+                    event.classList.remove("active");
+                } else {
+                    event.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+    {% include "footer.html" %}
+</body>
+
+</html>

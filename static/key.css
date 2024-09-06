@@ -1,0 +1,32 @@
+main{
+    margin-top: 70px;
+    min-height: 100vh;
+    margin-bottom: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+output{
+    margin: 7px;
+    font-weight: 300;
+    font-size: large;
+
+}
+fieldset{
+    margin: 10px 7px;
+}
+fieldset p{
+    background-color: rgb(41, 38, 38);
+    color: white;
+}
+
+.inst{
+    margin-top: 20px;
+    border: 2px;
+    border-radius: 5px;
+    border-style: double;
+    padding-left: 20px;
+}
+.inst ul{
+    list-style: disc;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/otp.css">
+    <title>OTP</title>
+</head>
+<body>
+    {% include "header.html" %}
+
+    <main>
+        <form method="post">
+            {% csrf_token %}
+            <label for="otp">
+                OTP: <input type="text" minlength="4" maxlength="4" pattern="\d*" title="Please Enter 4-digit OTP" required name="otp" placeholder="0000">
+            </label>
+            <input type="submit" value="SUBMIT">
+        </form>
+
+        <form method="get">
+            <label for="resend_otp">
+                <input type="hidden" value="Resend">
+                <input type="submit" value="Resend">
+            </label>
+        </form>
+
+        {% if alert != "" %}
+        <center>
+            <fieldset>
+                <h1> {{ alert }} </h1>
+            </fieldset>
+        </center>
+        {% endif %}
+    </main>
+    {% include "footer.html" %}
+
+</body>
+</html>

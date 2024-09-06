@@ -1,0 +1,111 @@
+main{
+    margin-top: 70px;
+    margin-bottom: 280px;
+    min-height: 100vh;
+}
+
+
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    margin-top: 200px;
+    /* background-color: 003459; */
+}
+.box {
+    padding-bottom: 20px;
+    color: white;
+    /* align-content: center; */
+    border-style: groove;
+    border-color: white;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in-out;
+    
+    /* added */
+    margin-left: 24px;
+    padding: 5px;
+    text-align: justify;
+}
+.box:hover {
+    box-shadow: 5px 5px 5px rgba(240, 237, 237, 0.735);
+}
+
+.image {
+    margin-left: 10%;
+    margin-top: 10%;
+    height: fit-content;
+    border-radius: 9px;
+    margin-bottom: 0;
+    margin-right: 0px;
+}
+
+.store {
+    /* margin-top: 50px; */
+    width: 300px;
+    height: 160px;
+    margin: 50px auto;
+    /* margin-left: 500px;
+    margin-right: 403px; */
+    /* align-items: center; */
+    padding: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: whitesmoke;
+    font-size: larger;
+    line-height: 38px;
+    font-style: roboto, arial;
+    font-weight: normal;
+    border-style: double;
+    border-color: #d9a000;
+}
+
+.options {
+    margin: 5px;
+    display: grid;
+    align-content: center;
+}
+
+.button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 23px;
+    /* margin-left: 150px; */
+    background: inherit;
+    color: white;
+    border-style: groove;
+    border-color: #d9a000;
+    margin-top: 9px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: roboto;
+    font-size: 13px;
+    transition: background-color 0.7s, color 0.7s, box-shadow 0.15s;
+}
+.button:hover {
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px rgba(240, 237, 237, 0.735);
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+
+.file-enter {
+    color: white;
+    margin-left: 5%;
+    margin-top: 30px;
+
+
+}
+
+textarea{
+    padding: 10px;
+    width: 90%;
+    height: 200px;
+}
+
+input[type = file]{
+    border: 2px solid #d9a000;
+}

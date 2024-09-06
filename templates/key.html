@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/key.css">
+    <title>Key</title>
+</head>
+
+<body>
+    {% include "header.html" %}
+    <main>
+        <center>
+            <div
+                style="background-color: rgb(19, 19, 44);color: blanchedalmond; font-family: 'Times New Roman', Times, serif">
+                <h1>Secured Key</h1>
+            </div>
+            <fieldset>
+                <output> <p> {{ key }} </p> </output>
+            </fieldset>
+            </div>
+            <a href="/store/"><button type="button">GOT IT</button></a>
+        </center>
+
+        <div class="inst">
+            <p>
+                <h3>This Key Is CONFIDENTIAL!!!</h3>
+            </p>
+            <ul>
+                <li>Don't share your key with anyone</li>
+                <li>Keep your key at safe place</li>
+                <li>Only the above key can be used to retrieve the data</li>
+                <li>We wouldn't be at a fault if you lost your key and then unable to get your data</li>
+                <li>We don't SAVE YOUR KEY anywhere with us</li>
+            </ul>
+        </div>
+
+    </main>
+
+    {% include "footer.html" %}
+
+</body>
+
+</html>

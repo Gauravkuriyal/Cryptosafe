@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin-top: 70px; 
+    min-height: 100vh;
+    margin-bottom: 280px;
+}
+form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin: 30px auto;
+    gap: 10px;
+}
+
+input[type = text]{
+    width: 5.5em;
+    padding: 10px 5px 10px 9px;
+    background: linear-gradient(90deg, #8080809c 50%, #f2efef 50%);
+    background-size: 4rem 100%;
+    background-repeat: repeat-x;
+    font-size: x-large;
+    font-weight: 700;
+    letter-spacing: 18px;
+    height: 30px;
+    margin-top: 40px;
+}
+input[type = submit]{
+    border: 2px solid rgb(53, 52, 52);
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+h1{
+    display: inline-block;
+    color: red;
+}

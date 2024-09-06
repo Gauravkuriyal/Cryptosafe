@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    margin-top: 70px;
+    min-height: 100vh;
+    margin-bottom: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(45deg, #ffffffbe 25%, #ccccccb8 25%, #ccccccaf 50%, #ffffffcf 50%, #ffffffc0 75%, #ccccccd6 75%, #ccccccd7 100%);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.home_intro{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    background-image: url("/static/images/bg\ for\ home\ page.png");
+    background-size: cover;
+    background-repeat: round;
+
+
+}
+.home_intro_text{
+    display: grid;
+    width: 50vw;
+    max-width: 1280px;
+    margin: 10% 0px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(238, 130, 238, 0);
+}
+/* .blank{
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(127, 255, 212, 0);
+} */
+
+.intro{
+    margin-top: 30px;
+    display: grid;
+    color: white;
+    align-items: center;
+}
+.intro h3{
+    text-align: center;
+}
+.intro div{
+    border: 2px;
+    height: -webkit-fill-available;
+    background-color: 00a8e8;
+    font-family: "Times New Roman",'Open Sans', sans-serif;
+    text-align: justify;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.intro img{
+    width: 41vw;
+    padding: 20px;
+
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 56vw 30vw;
+    background-color: 007ea7;
+    gap: 10px;
+    margin: 50px 0px;
+    color: white;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+.content h3{
+    text-align: center;
+}
+.content div{
+    border: 2px;
+    font-family: "Times New Roman",'Open Sans', sans-serif;
+    text-align: justify;
+}
+.content img{
+    width: 30vw;
+    margin-left: 40px;
+}
+
+.content1{
+    display: grid;
+    grid-template-columns: 30vw 60vw;
+    background-color: 007ea7;
+    gap: 10px;
+    margin: 50px 0px;
+    color: white;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+.content1 h3{
+    text-align: center;
+}
+.content1 div{
+    border: 2px;
+    font-family: "Times New Roman",'Open Sans', sans-serif;
+    text-align: justify;
+    margin-left: 30px;
+}
+.content1 img{
+    width: 30vw;
+}
+
+
+/* Animations */
+
+
+@keyframes flip {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content, .content1{
+        display: flex;
+        flex-direction: column;
+    }
+}

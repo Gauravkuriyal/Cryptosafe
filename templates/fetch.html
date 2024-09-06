@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/fetch.css">
+    <title>Fetch</title>
+</head>
+
+<body>
+    {% include "header.html" %}
+    
+    <main>
+    <div class="grid1">
+        <div class="box">
+            <h1>What is decryption?</h1>
+            <ul>
+                <li>Decryption is the process of transforming data that has been rendered unreadable through encryption
+                    back to its unencrypted form.</li>
+                <li> In decryption, the system extracts and converts the garbled data and transforms it to texts and
+                    images that are easily understandable not only by the reader but also by the system.</li>
+                <li>Decryption may be accomplished manually or automatically.</li>
+                <li>One of the foremost reasons for implementing an encryption-decryption system is privacy. </li>
+                <li>The person in charge of decryption receives a prompt or window in which a key may be entered to
+                    access encrypted information.</li>
+            </ul>
+            <script>
+                // Adding JavaScript to trigger the animation after page load
+                document.addEventListener("DOMContentLoaded", function (event) {
+                    document.querySelector('.box').style.transform = 'translateX(0)';
+                });
+            </script>
+        </div>
+        <div class="image">
+            <!-- <img style="border-radius: 80%;border-style: ridge;"
+                src="https://tse4.mm.bing.net/th?id=OIP.nQ3KcWs_nfbszFsVQcR8PwHaEo&pid=Api&P=0&h=220"> -->
+                <img style="border-radius: 80%;border-style: ridge;"
+                src="/static/images/data leak.jpg">
+
+        </div>
+    </div>
+        <div class="inst up">
+            <center>
+                <h1>Want To see Your Data?</h1>
+                <br>
+                <h3>Enter your key</h3>
+
+                <form method="post">
+                {% csrf_token %}
+                    Key:
+                    <input type="text" required name="key_form">
+                    <br>
+                    <br>
+                    <input class="submit" style="padding: 1%;background-color: black;color: white;border: none;border-radius: 5px;" type="submit" value="submit">
+                </form>
+            </center>
+        </div>
+        <hr>
+
+        {% if output != "" %}
+        <h3>Your Data</h3><br>
+        <fieldset>
+            <pre><output > {{ output }} </output></pre>
+        </fieldset>
+        <hr>
+        {% endif %}
+        <div class="inst">
+            <h3>Can't get your data?</h3>
+            <ul>
+                <li>Check wether your key is correct or not.</li>
+                <li>You should save Your data first frome <a href="/store/">Store</a> page first.</li>
+                <li>Try re-opening the current page and enter key again.</li>
+            </ul>
+        </div>
+    </main>
+    
+    {% include "footer.html" %}
+</body>
+
+</html>

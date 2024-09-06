@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/fetch.css">
+    <title>Fetch</title>
+</head>
+<body>
+
+    <main>
+        <div class="inst up">
+            <center>
+            <h1>Want To see Your Data?</h1>
+            <br>
+            <h3>Enter your key</h3>
+            
+                <form method="post">
+                    Key:
+                    <input type="text" required name="key_form">
+                    <br>
+                    <input class="submit" type="submit" value="submit">
+                </form>
+            </center>
+        </div>
+        <hr>
+
+        <h3>Your Data</h3><br>
+        <fieldset>
+            <pre><output > </output></pre>
+        </fieldset>
+        <hr>
+        <div class="inst">
+            <h3>Can't get your data?</h3>
+            <ul>
+                <li>Check wether your key is correct or not</li>
+                <li>You should save Your data first frome <a href="/store/">Store</a> page first</li>
+                <li>Try re-opening the current page and enter key again</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

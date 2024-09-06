@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/static/header.css">
+<style>
+</style>
+<header>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">CRYPTOSAFE</a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about_us/">About</a></li>
+                <li><a href="/store/">Store</a></li>
+                <li><a href="/fetch/">Fetch</a></li>
+                <li><a href="/feedback/">Feedback</a></li>
+            </ul>
+
+            <div class="dropdown">
+                <button class="drpbtn" onclick="showmenu()"><img src="/static/images/menu_icon.svg" width="20px" height="20px"
+                        alt="menu"></button>
+                <div class="optionContainer">
+                    <div class="dropOptions">
+                        <div class="menuOption"><a href="/">Home</a></div>
+                        <div class="menuOption"><a href="/store/">Store</a></div>
+                        <div class="menuOption"><a href="/fetch/">Fetch</a></div>
+                        <div class="menuOption"><a href="/feedback/">Feedback</a></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function showmenu() {
+                    let btn = document.querySelector(".drpbtn");
+                    let opt = document.querySelector(".optionContainer")
+                    if (opt.style.display == "block"){
+                        opt.style.display = "none";
+                    }
+                    else if (opt.style.display == "none" || opt.style.display == ''){
+                        opt.style.display = "block";
+                    }
+                }
+
+            </script>
+        </div>
+    </nav>
+</header>
